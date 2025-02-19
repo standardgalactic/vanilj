@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble City Design Proposal 2.0</title>
+    <style>
+        body {
+            background-color: #001a00;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        h1, h2, h3 {
+            border-bottom: 1px solid #00ff00;
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .glitch {
+            position: relative;
+            display: inline-block;
+        }
+
+        .glitch::before, .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #001a00;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 green;
+            animation: glitch-anim 2s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 lime;
+            animation: glitch-anim2 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim {
+            0% { clip: rect(42px, 9999px, 44px, 0); }
+            5% { clip: rect(86px, 9999px, 8px, 0); }
+            10% { clip: rect(97px, 9999px, 94px, 0); }
+            15% { clip: rect(57px, 9999px, 96px, 0); }
+            20% { clip: rect(40px, 9999px, 40px, 0); }
+            25% { clip: rect(40px, 9999px, 40px, 0); }
+            30% { clip: rect(100px, 9999px, 41px, 0); }
+            35% { clip: rect(99px, 9999px, 62px, 0); }
+            40% { clip: rect(52px, 9999px, 67px, 0); }
+            45% { clip: rect(57px, 9999px, 61px, 0); }
+            50% { clip: rect(15px, 9999px, 78px, 0); }
+            55% { clip: rect(53px, 9999px, 57px, 0); }
+            60% { clip: rect(67px, 9999px, 60px, 0); }
+            65% { clip: rect(61px, 9999px, 83px, 0); }
+            70% { clip: rect(86px, 9999px, 77px, 0); }
+            75% { clip: rect(32px, 9999px, 50px, 0); }
+            80% { clip: rect(92px, 9999px, 43px, 0); }
+            85% { clip: rect(40px, 9999px, 69px, 0); }
+            90% { clip: rect(36px, 9999px, 76px, 0); }
+            95% { clip: rect(6px, 9999px, 95px, 0); }
+            100% { clip: rect(44px, 9999px, 48px, 0); }
+        }
+
+        @keyframes glitch-anim2 {
+            0% { clip: rect(72px, 9999px, 49px, 0); }
+            5% { clip: rect(51px, 9999px, 3px, 0); }
+            10% { clip: rect(51px, 9999px, 39px, 0); }
+            15% { clip: rect(68px, 9999px, 98px, 0); }
+            20% { clip: rect(61px, 9999px, 38px, 0); }
+            25% { clip: rect(100px, 9999px, 97px, 0); }
+            30% { clip: rect(55px, 9999px, 93px, 0); }
+            35% { clip: rect(63px, 9999px, 32px, 0); }
+            40% { clip: rect(73px, 9999px, 53px, 0); }
+            45% { clip: rect(37px, 9999px, 37px, 0); }
+            50% { clip: rect(85px, 9999px, 57px, 0); }
+            55% { clip: rect(78px, 9999px, 44px, 0); }
+            60% { clip: rect(41px, 9999px, 40px, 0); }
+            65% { clip: rect(64px, 9999px, 64px, 0); }
+            70% { clip: rect(67px, 9999px, 92px, 0); }
+            75% { clip: rect(64px, 9999px, 80px, 0); }
+            80% { clip: rect(77px, 9999px, 81px, 0); }
+            85% { clip: rect(84px, 9999px, 72px, 0); }
+            90% { clip: rect(76px, 9999px, 56px, 0); }
+            95% { clip: rect(25px, 9999px, 95px, 0); }
+            100% { clip: rect(60px, 9999px, 83px, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch" data-text="Bubble City Design Proposal 2.0">Bubble City Design Proposal 2.0</h1>
+        <p><em>Monica Anderson</em></p>
+        <hr>
+        <h2 class="glitch" data-text="User Experience Example">User Experience Example</h2>
+        <h3 class="glitch" data-text="Use the Search Feature">Use the Search Feature</h3>
+        <ul>
+            <li><strong>Step 1:</strong> Enter <code>[Oblicosm]</code> in the search box and hit return. A new window (or tab, depending on your preferences) opens.</li>
+            <li><strong>Step 2:</strong> You have created a "Bubble", and it is displayed in a "Bubble Window". In this mode, Bubble City operates similarly to a web search engine like Google or Bing, but it is designed for real-time messages.</li>
+            <li><strong>Step 3:</strong> The result of a search on Bubble City is a topic-specific chat room (one chat room, not a list of results as in web search) where people only discuss the topic you searched for.</li>
+            <li><strong>Step 4:</strong> All bubbles open in a new window (or tab). The window will display messages about the Oblicosm, going back as far in time as your screen height allows, and can be scrolled.</li>
+            <li><strong>Step 5:</strong> You can read these messages to catch up. In low-traffic bubbles, there may not be many messages, and some may be quite old. Messages you have already seen will be displayed in gray. You can scroll back in higher-volume bubbles or mark everything as read.</li>
+        </ul>
+
+        <h3 class="glitch" data-text="Sample User Experience: Swipe Tuning">Sample User Experience: Swipe Tuning</h3>
+        <ul>
+            <li><strong>Step 1:</strong> Start by browsing message titles in the Bubble View. Swipe left on irrelevant or possibly spam messages to turn them reddish gray. There may be "collateral rejection" of other messages on the same topic also turning reddish gray.</li>
+            <li><strong>Step 2:</strong> Swipe right on the best messages to highlight them in green. There is a refresh button that redraws the screen, discarding irrelevant messages and accepting green highlights. Similar messages to those you have right-swiped may appear.</li>
+            <li><strong>Step 3:</strong> If you cannot use swipe gestures, use the <code>- (Minus)</code> and <code>+ (Plus)</code> buttons on each message to deprecate or encourage that message, and any similar messages.</li>
+            <li><strong>Step 4:</strong> Click on any message that looks interesting. Another window/tab opens, displaying the message in the center. Above it, in reverse chronological order, older messages are shown. If there is traffic in the bubble, new messages in the thread appear below the initial message.</li>
+            <li><strong>Step 5:</strong> You can swipe-tune any message at any time. Swipe-tunes become part of your Bubble definition when you close and save the Bubble.</li>
+            <li><strong>Step 6:</strong> When viewing a thread, you can immediately reply to the message you clicked on. This is the most common way to post something. Click on something interesting, see its thread, type a reply, and watch the thread continue after your message.</li>
+        </ul>
+
+        <h3 class="glitch" data-text="Getting Started">Getting Started</h3>
+        <ul>
+            <li><strong>Step 1:</strong> Create (enter) a Bubble. If there is no traffic in the Bubble, post something and others may reply. They may have entered the same Bubble weeks ago.</li>
+        </ul>
+
+        <hr>
+
+        <h2 class="glitch" data-text="ClickBait Headlines Completely Eliminated">ClickBait Headlines Completely Eliminated</h2>
+        <p>We can totally avoid clickbait headlines. The mechanism for this is reserved for NDA level discussions. This solution also simplifies or solves several other problems in service design and implementation.</p>
+
+        <h2 class="glitch" data-text="Traffic Logging for Machine Learning">Traffic Logging for Machine Learning</h2>
+        <p>All posts are public and need to be kept for at least some time in a repository to be displayed to others as required. This system is designed to be real-time, so we may impose limits on history length.</p>
+        <p>Users have no expectation of privacy for this content. Messages in our repository will be used as a corpus for training future versions of the system. We will not sell these corpora to outsiders but may share them with corporate collaborators for language research and product enhancement purposes.</p>
+
+        <h2 class="glitch" data-text="No Voting On Messages">No Voting On Messages</h2>
+        <p>Unlike SlashDot and Reddit, voting should be unnecessary and is mostly a nerd-favored solution to noise problems.</p>
+
+        <h2 class="glitch" data-text="No Need for #HashTags">No Need for #HashTags</h2>
+        <p>#HashTags were invented by IRC and Twitter users due to the lack of a decent semantic search capability. We cannot prevent users from using hashtags, but we can decide whether to support tagging by providing a tag canonicalizing service.</p>
+
+        <h2 class="glitch" data-text="Edit Button">Edit Button</h2>
+        <p>Editing would change the Bubble definition and cause trouble in many places. This feature will not be included in the first release.</p>
+
+        <h2 class="glitch" data-text="No Subscription Fees">No Subscription Fees</h2>
+        <p>This substantially lowers the threshold for joining.</p>
+
+        <h2 class="glitch" data-text="No Advertising">No Advertising</h2>
+        <p>This would substantially lower the enjoyment of the system. We aim to monetize the service exclusively by selling postage.</p>
+
+        <hr>
+
+        <h2 class="glitch" data-text="Links">Links</h2>
+        <ul>
+            <li><a href="https://syntience.com/BubbleCity2.pdf" target="_blank">Monica's Patents assigned to Google</a></li>
+            <li><a href="https://jimruttshow.blubrry.net/the-jim-rutt-show-transcripts/currents-086-monica-anderson-on-bubble-city/" target="_blank">Introduction to AI Epistemology</a></li>
+        </ul>
+
+        <hr>
+
+        <h2 class="glitch" data-text="Bubble City">Bubble City</h2>
+        <h3 class="glitch" data-text="Design Proposal">Design Proposal</h3>
+        <ul>
+            <li><strong>A Twitter Alternative</strong></li>
+            <li><strong>Not a Social Medium</strong></li>
+            <li><strong>A Real-Time Idea Router</strong></li>
+        </ul>
+
+        <hr>
+
+        <p><em>Monica Anderson</em></p>
+        <p><em>Syntience Inc</em></p>
+        <p><em>October 31, 2022</em></p>
+
+        <hr>
+
+        <img src="bubble-city.jpg" alt="Bubble City">
+        <img src="bootstrap.jpg" alt="Bootstrap">
+        <img src="b∞tloader.jpg" alt="Bootloader">
+    </div>
+</body>
+</html>
