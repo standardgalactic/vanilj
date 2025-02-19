@@ -76,6 +76,9 @@ https://syntience.com/BubbleCity2.pdf
 
 https://jimruttshow.blubrry.net/the-jim-rutt-show-transcripts/currents-086-monica-anderson-on-bubble-city/
 
+<!-- First actual ((bubble)) -->
+
+![](bubble-city.jpg)
 
 
 # AI Bootcamp
