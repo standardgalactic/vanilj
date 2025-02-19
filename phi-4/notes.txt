@@ -1,0 +1,39 @@
+vanilj/Phi-4
+Microsoft's Phi 4 model
+78.2K
+2 months ago
+
+
+latest
+5 Tags
+2 months ago
+
+f00b090d5270 · 9.1GB
+
+model
+phi3
+·
+14.7B
+·
+Q4_K_M
+params
+{ "stop": [ "<|im_start|>", "<|im_sep|>", "<|im_end|>", "<|im_st
+template
+{{ if .System }}<|im_start|>system<|im_sep|>{{ .System }}<|im_end|>{{ end }}{{ if .Prompt }}<|im_sta
+Readme
+Official model: https://ollama.com/library/phi4
+Unsloth’s Phi 4 model with fixed tokenizer: https://ollama.com/vanilj/phi-4-unsloth
+GGUF from matteogeniaccio/phi-4.
+
+Found here.
+
+Blog
+Download
+Docs
+GitHub
+Discord
+X (Twitter)
+Meetups
+© 2025 Ollama Inc.
+
+https://ollama.com/vanilj/Phi-4
