@@ -79,6 +79,7 @@ https://jimruttshow.blubrry.net/the-jim-rutt-show-transcripts/currents-086-monic
 <!-- First actual ((bubble)) -->
 
 ![](bubble-city.jpg)
+![](bootstrap.jpg)
 
 
 # AI Bootcamp
