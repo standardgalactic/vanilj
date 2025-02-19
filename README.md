@@ -80,7 +80,7 @@ https://jimruttshow.blubrry.net/the-jim-rutt-show-transcripts/currents-086-monic
 
 ![](bubble-city.jpg)
 ![](bootstrap.jpg)
-
+![](b∞tloader.jpg)
 
 # AI Bootcamp
 
